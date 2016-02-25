@@ -3,7 +3,9 @@ platform :ios, '9.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
 pod 'Firebase', '>= 2.5.0'
-
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'Rollout.io', '~> 0.14.4'
 
 target 'WSDAPP' do
 
