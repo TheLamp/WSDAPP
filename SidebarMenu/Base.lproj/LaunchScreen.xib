@@ -17,11 +17,11 @@
                         <constraint firstAttribute="height" constant="92" id="y3O-t1-dF4"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BETA 1.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-SY-vpb">
-                    <rect key="frame" x="207" y="326" width="67" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BETA 2.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-SY-vpb">
+                    <rect key="frame" x="205" y="326" width="69" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="U19-rw-RFG"/>
-                        <constraint firstAttribute="width" constant="67" id="rTi-cs-rm9"/>
+                        <constraint firstAttribute="width" constant="69" id="rTi-cs-rm9"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,7 +40,7 @@
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="16" id="GVt-CF-PKB"/>
                 <constraint firstItem="qCr-SY-vpb" firstAttribute="top" secondItem="NMh-sF-ivw" secondAttribute="bottom" constant="40" id="See-Bz-EHB"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="UPW-ei-itw"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="centerX" secondItem="qCr-SY-vpb" secondAttribute="centerX" id="Ulu-5V-hgg"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="centerX" secondItem="qCr-SY-vpb" secondAttribute="centerX" constant="1" id="Ulu-5V-hgg"/>
                 <constraint firstItem="NMh-sF-ivw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="e9Z-aM-V93"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="centerX" secondItem="NMh-sF-ivw" secondAttribute="centerX" id="sJG-Ie-Cat"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="qCr-SY-vpb" secondAttribute="bottom" constant="96" id="xjR-V7-Lf1"/>
