@@ -10,4 +10,4 @@ import Foundation
 
 
 // RSS Feed URL
-let RSS_FEED_URL = "http://9to5mac.com/author/mikebeas/feed/rss.xml"
+let RSS_FEED_URL = "http://thelampservices.com/wsd/feed"
