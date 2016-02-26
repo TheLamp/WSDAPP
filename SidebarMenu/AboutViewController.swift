@@ -8,18 +8,24 @@
 
 import UIKit
 import Foundation
-import MessageUI
+import Firebase
 
-class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate {
-    @IBOutlet weak var meubutton1: UIBarButtonItem!
+class AboutViewController: UITableViewController {
+    @IBOutlet weak var drawer: UIBarButtonItem!
+    @IBOutlet weak var connectionTest: UILabel!
+    
+let ref = Firebase(url: "https://burning-heat-8250.firebaseio.com/test")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if self.revealViewController() != nil {
-            meubutton1.target = self.revealViewController()
-            meubutton1.action = "revealToggle:"
+            drawer.target = self.revealViewController()
+            drawer.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        ref.observeEventType (.Value, withBlock: { snapshot in
+            self.connectionTest.text = snapshot.value as? String
+        })
         
     }
     

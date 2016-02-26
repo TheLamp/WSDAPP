@@ -4,3 +4,4 @@
 
 #import "SWRevealViewController.h"
 #import <Rollout/Rollout.h>
+#import <Firebase/Firebase.h>

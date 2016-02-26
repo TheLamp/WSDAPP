@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '586870C24BDAF4FE6DC8624F'
+               BlueprintIdentifier = 'C6EC70FDC5B43AE28B08A764'
                BlueprintName = 'Pods-WSDAPP'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_WSDAPP.framework'>
