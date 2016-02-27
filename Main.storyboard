@@ -397,14 +397,14 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gLx-2X-t4L" firstAttribute="top" secondItem="0yO-Fy-FjS" secondAttribute="topMargin" constant="7" id="Exl-hk-Zpa"/>
-                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="centerY" secondItem="0yO-Fy-FjS" secondAttribute="centerY" id="UdU-xu-ZKO"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="BwM-1c-8GH" secondAttribute="trailing" constant="214" id="WkK-1L-dY0"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="gLx-2X-t4L" secondAttribute="trailing" constant="212" id="Z4F-Cx-cKM"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="BwM-1c-8GH" secondAttribute="bottom" constant="28.5" id="bAW-wN-ROL"/>
-                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="leading" secondItem="0yO-Fy-FjS" secondAttribute="leadingMargin" constant="210" id="ccb-Lk-Dqo"/>
-                                                <constraint firstItem="gLx-2X-t4L" firstAttribute="leading" secondItem="0yO-Fy-FjS" secondAttribute="leadingMargin" constant="210" id="fV8-pN-3dM"/>
-                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="top" secondItem="gLx-2X-t4L" secondAttribute="bottom" constant="1" id="tFZ-HO-IG6"/>
+                                                <constraint firstAttribute="trailing" secondItem="BwM-1c-8GH" secondAttribute="trailing" constant="222" id="EJv-Uj-nBM"/>
+                                                <constraint firstItem="gLx-2X-t4L" firstAttribute="top" secondItem="0yO-Fy-FjS" secondAttribute="top" constant="15" id="EZJ-XJ-T6y"/>
+                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="leading" secondItem="0yO-Fy-FjS" secondAttribute="leading" constant="218" id="JPT-Nw-DM3"/>
+                                                <constraint firstAttribute="trailing" secondItem="gLx-2X-t4L" secondAttribute="trailing" constant="220" id="KwJ-F8-G7H"/>
+                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="top" secondItem="gLx-2X-t4L" secondAttribute="bottom" constant="1" id="N9K-3A-PCq"/>
+                                                <constraint firstItem="gLx-2X-t4L" firstAttribute="leading" secondItem="0yO-Fy-FjS" secondAttribute="leading" constant="218" id="cnF-Ie-egM"/>
+                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="centerY" secondItem="0yO-Fy-FjS" secondAttribute="centerY" id="nnS-dL-00C"/>
+                                                <constraint firstAttribute="bottom" secondItem="BwM-1c-8GH" secondAttribute="bottom" constant="36.5" id="rUG-A9-8CK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -713,7 +713,7 @@
             </objects>
             <point key="canvasLocation" x="3295" y="-622"/>
         </scene>
-        <!--TestHome-->
+        <!--Home-->
         <scene sceneID="m8i-6H-mkA">
             <objects>
                 <viewController id="B0P-Zi-3vA" customClass="ListViewController" customModule="WSDAPP" customModuleProvider="target" sceneMemberID="viewController">
@@ -733,7 +733,7 @@
                                 <rect key="frame" x="0.0" y="143" width="600" height="457"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rssCell" textLabel="kn6-ze-bCc" detailTextLabel="D7R-uW-CCY" style="IBUITableViewCellStyleSubtitle" id="jyf-dH-3Nb">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rssCell" textLabel="kn6-ze-bCc" style="IBUITableViewCellStyleDefault" id="jyf-dH-3Nb">
                                         <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyf-dH-3Nb" id="ykY-5Z-3y9">
@@ -741,17 +741,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kn6-ze-bCc">
-                                                    <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D7R-uW-CCY">
-                                                    <rect key="frame" x="15" y="25.5" width="30.5" height="13.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -780,7 +773,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="TestHome" id="Vou-Mb-wgM">
+                    <navigationItem key="navigationItem" title="Home" id="Vou-Mb-wgM">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="nJr-PJ-Tfq"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
