@@ -380,29 +380,31 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2qu-Cl-AqV" id="0yO-Fy-FjS">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="94.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="District App v. BETA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-1c-8GH">
-                                                    <rect key="frame" x="219" y="27" width="160" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="160" id="tK0-X8-iBW"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="218" y="37" width="160" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waterloo Schools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-2X-t4L">
-                                                    <rect key="frame" x="218" y="8" width="162" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waterloo Schools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-2X-t4L">
+                                                    <rect key="frame" x="218" y="15" width="162" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="BwM-1c-8GH" secondAttribute="bottom" constant="38.5" id="dKQ-pb-Ums"/>
-                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="top" secondItem="0yO-Fy-FjS" secondAttribute="topMargin" constant="19" id="gmI-60-MtT"/>
-                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="leading" secondItem="0yO-Fy-FjS" secondAttribute="leading" constant="219" id="h5B-ql-vB5"/>
+                                                <constraint firstItem="gLx-2X-t4L" firstAttribute="top" secondItem="0yO-Fy-FjS" secondAttribute="topMargin" constant="7" id="Exl-hk-Zpa"/>
+                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="centerY" secondItem="0yO-Fy-FjS" secondAttribute="centerY" id="UdU-xu-ZKO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BwM-1c-8GH" secondAttribute="trailing" constant="214" id="WkK-1L-dY0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gLx-2X-t4L" secondAttribute="trailing" constant="212" id="Z4F-Cx-cKM"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="BwM-1c-8GH" secondAttribute="bottom" constant="28.5" id="bAW-wN-ROL"/>
+                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="leading" secondItem="0yO-Fy-FjS" secondAttribute="leadingMargin" constant="210" id="ccb-Lk-Dqo"/>
+                                                <constraint firstItem="gLx-2X-t4L" firstAttribute="leading" secondItem="0yO-Fy-FjS" secondAttribute="leadingMargin" constant="210" id="fV8-pN-3dM"/>
+                                                <constraint firstItem="BwM-1c-8GH" firstAttribute="top" secondItem="gLx-2X-t4L" secondAttribute="bottom" constant="1" id="tFZ-HO-IG6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
