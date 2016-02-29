@@ -3,7 +3,7 @@
 //  WSDAPP
 //
 //  Created by Gabe Zimbric on 2/26/16.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Copyright © 2016 LampServ. All rights reserved.
 //
 
 import Foundation

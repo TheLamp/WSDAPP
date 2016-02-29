@@ -3,7 +3,7 @@
 //  SidebarMenu
 //
 //  Created by Gabe Zimbric on 2/19/16.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Copyright © 2016 LampServ. All rights reserved.
 //
 
 import UIKit
