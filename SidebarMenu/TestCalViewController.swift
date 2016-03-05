@@ -87,7 +87,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // collect reusable cell
-        let cell = tableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("rssCell2", forIndexPath: indexPath)
         
         // find record for current cell
         let thisRecord : RssRecord2  = self.rssRecordList[indexPath.row]
@@ -101,7 +101,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func mytableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("segueShowDetails", sender: self)
+        self.performSegueWithIdentifier("segueShowDetails2", sender: self)
     }
     
     
@@ -144,7 +144,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
             self.rssRecord?.link += string
             
             //}else if isTagFound["pubDate"] == true {
-            //    self.rssRecord2?.pubDate += string
+               //self.rssRecord?.pubDate += string
         }
         
     }
@@ -244,7 +244,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if segue.identifier == "segueShowDetails" {
+        if segue.identifier == "segueShowDetails2" {
             
             // find index path for selected row
             let selectedIndexPath : [NSIndexPath] = self.newtable.indexPathsForSelectedRows!
@@ -253,7 +253,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
             self.newtable.deselectRowAtIndexPath(selectedIndexPath[0], animated: true)
             
             // create destination view controller
-            let destVc = segue.destinationViewController as! DetailsViewController
+            let destVc = segue.destinationViewController as! TestCalDetailsViewController
             
             // set title for next screen
             destVc.navigationItem.title = self.rssRecordList[selectedIndexPath[0].row].title

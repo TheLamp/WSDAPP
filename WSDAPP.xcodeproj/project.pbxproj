@@ -15,10 +15,7 @@
 		924061D81C8A538200162349 /* TestCalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924061D71C8A538200162349 /* TestCalDetailsViewController.swift */; };
 		924061DF1C8A55FD00162349 /* CalCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924061DE1C8A55FD00162349 /* CalCommon.swift */; };
 		926399541C7D7D980017B7A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926399531C7D7D980017B7A6 /* Main.storyboard */; };
-		926DD3D01C814E1C005A4FEB /* GTL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926DD3C91C814D75005A4FEB /* GTL.framework */; };
-		926DD3D51C81507E005A4FEB /* GTLCalendar_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 926DD3D41C81507E005A4FEB /* GTLCalendar_Sources.m */; };
 		926DD3D71C81518F005A4FEB /* TestCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926DD3D61C81518F005A4FEB /* TestCalViewController.swift */; };
-		926DD3D91C817AF1005A4FEB /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926DD3D81C817AF1005A4FEB /* GTMOAuth2ViewTouch.xib */; };
 		92AB0D7C1C7D7D7D0030C3D1 /* WSDAPP.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 92AB0D7B1C7D7D7D0030C3D1 /* WSDAPP.xcworkspace */; };
 		92D055CA1C76E59300CBEEC0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D055C91C76E59300CBEEC0 /* SWRevealViewController.m */; };
 		92D055CC1C780FC000CBEEC0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D055CB1C780FC000CBEEC0 /* CalendarViewController.swift */; };
@@ -39,41 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		926DD3C61C814D75005A4FEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 926DD3BE1C814D75005A4FEB /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
-			remoteInfo = GTLOSXCore;
-		};
-		926DD3C81C814D75005A4FEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 926DD3BE1C814D75005A4FEB /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F4469DB41C40229D00BCFAA1;
-			remoteInfo = GTLiOSCore;
-		};
-		926DD3CA1C814D75005A4FEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 926DD3BE1C814D75005A4FEB /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F4368F721B8233BF00E17643;
-			remoteInfo = GTLiOSUnitTests;
-		};
-		926DD3CC1C814D75005A4FEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 926DD3BE1C814D75005A4FEB /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
-			remoteInfo = GTLOSXUnitTests;
-		};
-		926DD3CE1C814D75005A4FEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 926DD3BE1C814D75005A4FEB /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
-			remoteInfo = OSXDevTool;
-		};
 		F4702A061A7F27DC00E30A3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F47029E81A7F27DB00E30A3C /* Project object */;
@@ -93,11 +55,7 @@
 		924061D71C8A538200162349 /* TestCalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCalDetailsViewController.swift; sourceTree = "<group>"; };
 		924061DE1C8A55FD00162349 /* CalCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalCommon.swift; sourceTree = "<group>"; };
 		926399531C7D7D980017B7A6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
-		926DD3BE1C814D75005A4FEB /* GTLCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTLCore.xcodeproj; path = "../../google-api-objectivec-client/Source/GTLCore.xcodeproj"; sourceTree = "<group>"; };
-		926DD3D31C815067005A4FEB /* GTLCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GTLCalendar.h; path = "../../google-api-objectivec-client/Source/Services/Calendar/Generated/GTLCalendar.h"; sourceTree = "<group>"; };
-		926DD3D41C81507E005A4FEB /* GTLCalendar_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLCalendar_Sources.m; path = "../../google-api-objectivec-client/Source/Services/Calendar/Generated/GTLCalendar_Sources.m"; sourceTree = "<group>"; };
 		926DD3D61C81518F005A4FEB /* TestCalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCalViewController.swift; sourceTree = "<group>"; };
-		926DD3D81C817AF1005A4FEB /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "../../google-api-objectivec-client/Deps/gtm-oauth2/Source/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
 		92AB0D7B1C7D7D7D0030C3D1 /* WSDAPP.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = WSDAPP.xcworkspace; sourceTree = SOURCE_ROOT; };
 		92D055C41C76B80A00CBEEC0 /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		92D055C81C76E59300CBEEC0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
@@ -130,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926DD3D01C814E1C005A4FEB /* GTL.framework in Frameworks */,
 				92D1EB561C7840FE00C39B1D /* UIKit.framework in Frameworks */,
 				92D1EB541C7840F400C39B1D /* WebKit.framework in Frameworks */,
 				F4702A161A7F342F00E30A3C /* MapKit.framework in Frameworks */,
@@ -168,18 +125,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		926DD3BF1C814D75005A4FEB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				926DD3C71C814D75005A4FEB /* GTL.framework */,
-				926DD3C91C814D75005A4FEB /* GTL.framework */,
-				926DD3CB1C814D75005A4FEB /* GTLiOSUnitTests.xctest */,
-				926DD3CD1C814D75005A4FEB /* GTLUnitTests.xctest */,
-				926DD3CF1C814D75005A4FEB /* OSXDevTool */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
@@ -206,13 +151,10 @@
 		F47029F21A7F27DB00E30A3C /* WSDAPP */ = {
 			isa = PBXGroup;
 			children = (
-				926DD3D31C815067005A4FEB /* GTLCalendar.h */,
-				926DD3D41C81507E005A4FEB /* GTLCalendar_Sources.m */,
 				92D055C81C76E59300CBEEC0 /* SWRevealViewController.h */,
 				92D055C91C76E59300CBEEC0 /* SWRevealViewController.m */,
 				F47029F51A7F27DB00E30A3C /* AppDelegate.swift */,
 				F47029FC1A7F27DB00E30A3C /* Images.xcassets */,
-				926DD3BE1C814D75005A4FEB /* GTLCore.xcodeproj */,
 				926399531C7D7D980017B7A6 /* Main.storyboard */,
 				92AB0D7B1C7D7D7D0030C3D1 /* WSDAPP.xcworkspace */,
 				F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */,
@@ -240,7 +182,6 @@
 		F47029F31A7F27DB00E30A3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				926DD3D81C817AF1005A4FEB /* GTMOAuth2ViewTouch.xib */,
 				F47029F41A7F27DB00E30A3C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -341,12 +282,6 @@
 			mainGroup = F47029E71A7F27DB00E30A3C;
 			productRefGroup = F47029F11A7F27DB00E30A3C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 926DD3BF1C814D75005A4FEB /* Products */;
-					ProjectRef = 926DD3BE1C814D75005A4FEB /* GTLCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F47029EF1A7F27DB00E30A3C /* WSDAPP */,
@@ -355,50 +290,11 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		926DD3C71C814D75005A4FEB /* GTL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTL.framework;
-			remoteRef = 926DD3C61C814D75005A4FEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		926DD3C91C814D75005A4FEB /* GTL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTL.framework;
-			remoteRef = 926DD3C81C814D75005A4FEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		926DD3CB1C814D75005A4FEB /* GTLiOSUnitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GTLiOSUnitTests.xctest;
-			remoteRef = 926DD3CA1C814D75005A4FEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		926DD3CD1C814D75005A4FEB /* GTLUnitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GTLUnitTests.xctest;
-			remoteRef = 926DD3CC1C814D75005A4FEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		926DD3CF1C814D75005A4FEB /* OSXDevTool */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = OSXDevTool;
-			remoteRef = 926DD3CE1C814D75005A4FEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		F47029EE1A7F27DB00E30A3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926DD3D91C817AF1005A4FEB /* GTMOAuth2ViewTouch.xib in Resources */,
 				F4702A001A7F27DC00E30A3C /* LaunchScreen.xib in Resources */,
 				92AB0D7C1C7D7D7D0030C3D1 /* WSDAPP.xcworkspace in Resources */,
 				F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */,
@@ -492,7 +388,6 @@
 				92D055CA1C76E59300CBEEC0 /* SWRevealViewController.m in Sources */,
 				92194AB91C7EC6B70003DB42 /* RssRecord.swift in Sources */,
 				92D1EB511C78385F00C39B1D /* HomeViewController.swift in Sources */,
-				926DD3D51C81507E005A4FEB /* GTLCalendar_Sources.m in Sources */,
 				924061DF1C8A55FD00162349 /* CalCommon.swift in Sources */,
 				92194ABE1C7EC6E80003DB42 /* DetailsViewController.swift in Sources */,
 				92194ABB1C7EC6C40003DB42 /* Common.swift in Sources */,
@@ -624,7 +519,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
-					"GTL_BUILT_AS_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -653,7 +547,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
-					"GTL_BUILT_AS_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

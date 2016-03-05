@@ -869,9 +869,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="myWebView" destination="tO3-AX-YA7" id="8HM-U8-jxg"/>
                         <outlet property="mywebView2" destination="tO3-AX-YA7" id="YJ8-aJ-buo"/>
-                        <outlet property="spinner" destination="k7a-hs-q0P" id="gaa-Ck-tbN"/>
                         <outlet property="spinner2" destination="k7a-hs-q0P" id="KCW-8x-Wct"/>
                     </connections>
                 </viewController>
@@ -899,7 +897,7 @@
                                 <rect key="frame" x="0.0" y="143" width="600" height="457"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rssCell" textLabel="8u9-2A-0xr" style="IBUITableViewCellStyleDefault" id="HWz-Xr-PIA">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rssCell2" textLabel="8u9-2A-0xr" style="IBUITableViewCellStyleDefault" id="HWz-Xr-PIA">
                                         <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWz-Xr-PIA" id="9sf-TO-6HU">
@@ -916,7 +914,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="UtP-6E-BRu" kind="show" identifier="segueShowDetails" trigger="accessoryAction" id="AEr-fW-HsC"/>
+                                            <segue destination="UtP-6E-BRu" kind="show" identifier="segueShowDetails2" id="hKW-Wu-HM3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -954,7 +952,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7R9-zI-JYU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2553" y="2938"/>
+            <point key="canvasLocation" x="2553" y="2958"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qKL-XB-00K">
