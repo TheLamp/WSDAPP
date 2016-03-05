@@ -895,7 +895,7 @@
                                 <rect key="frame" x="281" y="281" width="37" height="37"/>
                                 <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6SZ-Nn-gPQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6SZ-Nn-gPQ" userLabel="newtable">
                                 <rect key="frame" x="0.0" y="143" width="600" height="457"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -948,10 +948,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="menuButton" destination="w4y-ag-0rF" id="RfY-sL-mpi"/>
-                        <outlet property="myTableView" destination="6SZ-Nn-gPQ" id="vXu-WM-Wib"/>
-                        <outlet property="mytableView" destination="6SZ-Nn-gPQ" id="URE-P9-ZZ1"/>
+                        <outlet property="newtable" destination="6SZ-Nn-gPQ" id="YaH-oZ-joL"/>
                         <outlet property="spinner" destination="BJR-kZ-eB0" id="QJk-Kv-abH"/>
-                        <outlet property="tableView" destination="6SZ-Nn-gPQ" id="ag3-3v-26E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7R9-zI-JYU" sceneMemberID="firstResponder"/>

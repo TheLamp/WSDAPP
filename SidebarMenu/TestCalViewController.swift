@@ -11,7 +11,7 @@ import UIKit
 class TestCalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate {
     
     // outlet - table view
-    @IBOutlet weak var mytableView: UITableView!
+    @IBOutlet weak var newtable: UITableView!
     
     
     // outet - activity indicator
@@ -46,8 +46,8 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         
         // set tableview delegate
-        self.mytableView.dataSource = self
-        self.mytableView.delegate = self
+        self.newtable.dataSource = self
+        self.newtable.delegate = self
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -171,7 +171,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     func parserDidEndDocument(parser: NSXMLParser) {
         
         //reload table view
-        self.mytableView.reloadData()
+        self.newtable.reloadData()
         
         // stop spinner
         self.spinner.stopAnimating()
@@ -247,10 +247,10 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         if segue.identifier == "segueShowDetails" {
             
             // find index path for selected row
-            let selectedIndexPath : [NSIndexPath] = self.mytableView.indexPathsForSelectedRows!
+            let selectedIndexPath : [NSIndexPath] = self.newtable.indexPathsForSelectedRows!
             
             // deselect the selected row
-            self.mytableView.deselectRowAtIndexPath(selectedIndexPath[0], animated: true)
+            self.newtable.deselectRowAtIndexPath(selectedIndexPath[0], animated: true)
             
             // create destination view controller
             let destVc = segue.destinationViewController as! DetailsViewController
