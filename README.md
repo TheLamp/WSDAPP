@@ -1,4 +1,22 @@
 # WSDAPP
-App for Waterloo School District
 
-thread 1: signal SIGABRT error currently occuring from adding another RSS feed. New RSS feed causing issue can be found in SidebarMenu/TestCalViewController and it's supporting files. The currently working RSS feed can be found in SidebarMenu/ListViewController and it's supporting files.
+App made for Waterloo School District - Waterloo WI
+
+  - RSS Feeds for News and School Calendar
+  - Firebase and Wordpress for backend
+  - FlexiSCHED for WEBS planning
+  - School lunch menu
+
+WSDAPP used the coding language Swift for it's core and also uses Objective-C for additional parts inlcuding SWRevealViewController (Slide-Out Menu) and Firebase (Backend). WSDAPP was almost enitrly built off of guides found around the web.
+
+### Version
+2.5 BETA
+
+### Todos
+
+ - Finish FlexiSCHED page
+ - Clean up code
+ - Fix Settings page
+ - Add Night Mode
+
+:)
