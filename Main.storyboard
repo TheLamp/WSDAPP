@@ -208,6 +208,29 @@
                                             <segue destination="bWj-fS-2NZ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="8UY-fX-Qjj"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lJH-li-7q3">
+                                        <rect key="frame" x="0.0" y="264" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJH-li-7q3" id="cEl-xY-S3A">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FlexiSCHED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jv0-el-ZhI">
+                                                    <rect key="frame" x="61" y="6" width="93" height="31"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gear" translatesAutoresizingMaskIntoConstraints="NO" id="I2g-a1-orV">
+                                                    <rect key="frame" x="18" y="4" width="35" height="35"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="Wtl-oD-GtO" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="k5p-mq-owf"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -931,6 +954,50 @@
             </objects>
             <point key="canvasLocation" x="2553" y="2958"/>
         </scene>
+        <!--FlexiSCHED-->
+        <scene sceneID="ZU2-bd-sOn">
+            <objects>
+                <viewController id="r4i-Kx-GAm" customClass="FlexiSCHEDViewController" customModule="WSDAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KAe-CY-zGE"/>
+                        <viewControllerLayoutGuide type="bottom" id="gwe-ln-kVr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M4W-NK-xds">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otc-OM-L4N">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gwe-ln-kVr" firstAttribute="top" secondItem="Otc-OM-L4N" secondAttribute="bottom" id="4Z4-bc-znG"/>
+                            <constraint firstItem="Otc-OM-L4N" firstAttribute="bottom" secondItem="gwe-ln-kVr" secondAttribute="top" id="8rH-ID-VkN"/>
+                            <constraint firstItem="Otc-OM-L4N" firstAttribute="top" secondItem="KAe-CY-zGE" secondAttribute="bottom" id="Eb7-gK-hev"/>
+                            <constraint firstAttribute="trailing" secondItem="Otc-OM-L4N" secondAttribute="trailing" id="nQw-6o-ycK"/>
+                            <constraint firstItem="Otc-OM-L4N" firstAttribute="top" secondItem="KAe-CY-zGE" secondAttribute="bottom" id="pHz-vy-SM9"/>
+                            <constraint firstItem="Otc-OM-L4N" firstAttribute="leading" secondItem="M4W-NK-xds" secondAttribute="leading" id="ybd-wa-vWH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FlexiSCHED" id="PYY-NW-8iX">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="Nfe-px-kP2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="qd7-zL-4ue">
+                            <connections>
+                                <action selector="reload" destination="Otc-OM-L4N" id="bhY-BL-tVo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="Nfe-px-kP2" id="vwm-k5-dCP"/>
+                        <outlet property="webview8" destination="Otc-OM-L4N" id="ExD-Os-yv2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZF-lg-dZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2553" y="3725"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="qKL-XB-00K">
             <objects>
@@ -948,6 +1015,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRQ-S1-o5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1745" y="2963"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N8q-A1-PHE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wtl-oD-GtO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="woh-pv-QRZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="r4i-Kx-GAm" kind="relationship" relationship="rootViewController" id="FSO-PB-Mat"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czK-pD-vnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="3725"/>
         </scene>
     </scenes>
     <resources>

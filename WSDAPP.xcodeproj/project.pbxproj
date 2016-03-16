@@ -14,6 +14,7 @@
 		92194ABF1C7EC6E80003DB42 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92194ABD1C7EC6E80003DB42 /* ListViewController.swift */; };
 		924061D81C8A538200162349 /* TestCalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924061D71C8A538200162349 /* TestCalDetailsViewController.swift */; };
 		924061DF1C8A55FD00162349 /* CalCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924061DE1C8A55FD00162349 /* CalCommon.swift */; };
+		924061E11C98E7C600162349 /* FlexiSCHEDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924061E01C98E7C600162349 /* FlexiSCHEDViewController.swift */; };
 		926399541C7D7D980017B7A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926399531C7D7D980017B7A6 /* Main.storyboard */; };
 		926DD3D71C81518F005A4FEB /* TestCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926DD3D61C81518F005A4FEB /* TestCalViewController.swift */; };
 		92AB0D7C1C7D7D7D0030C3D1 /* WSDAPP.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 92AB0D7B1C7D7D7D0030C3D1 /* WSDAPP.xcworkspace */; };
@@ -54,6 +55,7 @@
 		921EDC471C7ECD090052FED1 /* Rollout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rollout.framework; path = Pods/Rollout.io/Rollout/Rollout.framework; sourceTree = "<group>"; };
 		924061D71C8A538200162349 /* TestCalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCalDetailsViewController.swift; sourceTree = "<group>"; };
 		924061DE1C8A55FD00162349 /* CalCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalCommon.swift; sourceTree = "<group>"; };
+		924061E01C98E7C600162349 /* FlexiSCHEDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexiSCHEDViewController.swift; sourceTree = "<group>"; };
 		926399531C7D7D980017B7A6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
 		926DD3D61C81518F005A4FEB /* TestCalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCalViewController.swift; sourceTree = "<group>"; };
 		92AB0D7B1C7D7D7D0030C3D1 /* WSDAPP.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = WSDAPP.xcworkspace; sourceTree = SOURCE_ROOT; };
@@ -174,6 +176,7 @@
 				926DD3D61C81518F005A4FEB /* TestCalViewController.swift */,
 				924061D71C8A538200162349 /* TestCalDetailsViewController.swift */,
 				92D055C41C76B80A00CBEEC0 /* SidebarMenu-Bridging-Header.h */,
+				924061E01C98E7C600162349 /* FlexiSCHEDViewController.swift */,
 			);
 			name = WSDAPP;
 			path = SidebarMenu;
@@ -377,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924061E11C98E7C600162349 /* FlexiSCHEDViewController.swift in Sources */,
 				92194ABF1C7EC6E80003DB42 /* ListViewController.swift in Sources */,
 				92D055CC1C780FC000CBEEC0 /* CalendarViewController.swift in Sources */,
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
