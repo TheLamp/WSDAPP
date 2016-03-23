@@ -15,14 +15,13 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var myTableView: UITableView!
     
     
-    // outet - activity indicator
-    @IBOutlet weak var spinner: UIActivityIndicatorView!
-    
     
     // outlet - barbutton
     @IBOutlet weak var menuButton: UIBarButtonItem!
 
+    // slide to refresh
     
+    let refreshControl: UIRefreshControl = UIRefreshControl()
     
     // xml parser
     var myParser: NSXMLParser = NSXMLParser()
@@ -31,7 +30,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var rssRecordList : [RssRecord] = [RssRecord]()
     var rssRecord : RssRecord?
     var isTagFound = [ "item": false , "title":false, "pubDate": false ,"link":false]
-    
     
     
     
@@ -46,10 +44,36 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
+        
+        // pull to refresh
+        refreshControl.addTarget(self, action: "uiRefreshControlAction", forControlEvents: UIControlEvents.ValueChanged)
+        self.myTableView.addSubview(refreshControl);
+        
+        
         // set tableview delegate
         self.myTableView.dataSource = self
         self.myTableView.delegate = self
     }
+    
+    func uiRefreshControlAction() {
+        if let rssURL = NSURL(string: RSS_FEED_URL) {
+            
+            
+            // fetch rss content from url
+            self.myParser = NSXMLParser(contentsOfURL: rssURL)!
+            
+            // set parser delegate
+            self.myParser.delegate = self
+            self.myParser.shouldResolveExternalEntities = false
+            
+            // start parsing
+            self.myParser.parse()
+        }
+        
+        self.myTableView.reloadData()
+        self.refreshControl.endRefreshing()
+    }
+    
     
     override func viewDidAppear(animated: Bool) {
         
@@ -174,15 +198,11 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //reload table view
         self.myTableView.reloadData()
         
-        // stop spinner
-        self.spinner.stopAnimating()
     }
     
     // if any error detected while parsing.
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
         
-        //  stop animation
-        self.spinner.stopAnimating()
         
         // show error message
         self.showAlertMessage(alertTitle: "Error", alertMessage: "Error while parsing xml.")
@@ -198,8 +218,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         if let rssURL = NSURL(string: RSS_FEED_URL) {
             
-            // start spinner
-            self.spinner.startAnimating()
             
             // fetch rss content from url
             self.myParser = NSXMLParser(contentsOfURL: rssURL)!
@@ -265,6 +283,5 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
     }
-    
     
 }
