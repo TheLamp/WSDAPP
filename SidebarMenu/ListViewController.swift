@@ -40,13 +40,13 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Do any additional setup after loading the view.
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
         
         // pull to refresh
-        refreshControl.addTarget(self, action: "uiRefreshControlAction", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: #selector(ListViewController.uiRefreshControlAction), forControlEvents: UIControlEvents.ValueChanged)
         self.myTableView.addSubview(refreshControl);
         
         
@@ -56,8 +56,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func uiRefreshControlAction() {
+        self.refreshControl.beginRefreshing()
+        rssRecordList.removeAll()
         if let rssURL = NSURL(string: RSS_FEED_URL) {
-            
             
             // fetch rss content from url
             self.myParser = NSXMLParser(contentsOfURL: rssURL)!
@@ -70,8 +71,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.myParser.parse()
         }
         
-        self.myTableView.reloadData()
         self.refreshControl.endRefreshing()
+        self.myTableView.reloadData()
+
     }
     
     

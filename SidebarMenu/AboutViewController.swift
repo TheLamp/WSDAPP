@@ -20,7 +20,7 @@ let ref = Firebase(url: "https://burning-heat-8250.firebaseio.com/test")
         super.viewDidLoad()
         if self.revealViewController() != nil {
             drawer.target = self.revealViewController()
-            drawer.action = "revealToggle:"
+            drawer.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         ref.observeEventType (.Value, withBlock: { snapshot in
