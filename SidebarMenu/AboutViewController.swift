@@ -10,11 +10,9 @@ import UIKit
 import Foundation
 import Firebase
 
-class AboutViewController: UITableViewController {
-    @IBOutlet weak var drawer: UIBarButtonItem!
-    @IBOutlet weak var connectionTest: UILabel!
+class AboutViewController: UIViewController {
     
-let ref = Firebase(url: "https://burning-heat-8250.firebaseio.com/test")
+    @IBOutlet weak var drawer: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +21,6 @@ let ref = Firebase(url: "https://burning-heat-8250.firebaseio.com/test")
             drawer.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        ref.observeEventType (.Value, withBlock: { snapshot in
-            self.connectionTest.text = snapshot.value as? String
-        })
         
     }
     
