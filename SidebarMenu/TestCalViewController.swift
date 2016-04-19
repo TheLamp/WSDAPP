@@ -173,8 +173,6 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         //reload table view
         self.newtable.reloadData()
         
-        // stop spinner
-        self.spinner.stopAnimating()
     }
     
     // if any error detected while parsing.
@@ -197,8 +195,6 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         
         if let rssURL = NSURL(string: RSS_FEED_URL2) {
             
-            // start spinner
-            self.spinner.startAnimating()
             
             // fetch rss content from url
             self.myParser = NSXMLParser(contentsOfURL: rssURL)!
