@@ -19,12 +19,12 @@ class LunchViewController: UIViewController {
         super.viewDidLoad()
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let url = NSURL(string: "https://thelampservices.com/lunch.pdf")
-        let request = NSURLRequest(URL: url!)
+        let url = URL(string: "https://docs.google.com/viewer?a=v&pid=sites&srcid=d2F0ZXJsb28uazEyLndpLnVzfGRpc3RyaWN0fGd4OjUxNDMxZjZmOGZlMmJhZjk")
+        let request = URLRequest(url: url!)
         
         webview2.loadRequest(request)
         

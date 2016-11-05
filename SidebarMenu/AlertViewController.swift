@@ -20,12 +20,12 @@ class AlertViewController: UIViewController {
         super.viewDidLoad()
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let url = NSURL(string: "https://sites.google.com/site/wsdtest123/districtalerts")
-        let request = NSURLRequest(URL: url!)
+        let url = URL(string: "https://sites.google.com/site/wsdtest123/districtalerts")
+        let request = URLRequest(url: url!)
         
         webview5.loadRequest(request)
         

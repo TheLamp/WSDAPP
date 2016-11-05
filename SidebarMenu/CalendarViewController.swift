@@ -3,7 +3,7 @@
 //  SidebarMenu
 //
 //  Created by Gabe Zimbric on 2/19/16.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Copyright © 2016 LampServ. All rights reserved.
 //
 
 import UIKit
@@ -20,12 +20,12 @@ class CalendarViewController: UIViewController {
         super.viewDidLoad()
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let url = NSURL(string: "https://www.thelampservices.com/schoolcalendar.pdf")
-        let request = NSURLRequest(URL: url!)
+        let url = URL(string: "https://www.thelampservices.com/schoolcalendar.pdf")
+        let request = URLRequest(url: url!)
         
         webview4.loadRequest(request)
         

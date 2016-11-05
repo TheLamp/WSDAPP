@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 @protocol RolloutNetwork;
+@protocol RolloutDeviceProperties;
+@protocol RolloutErrors;
 
 @interface RolloutConfiguration : NSObject
-
 
 @property (atomic) NSDictionary *conf;
 @property (atomic, readonly) NSDictionary *configurationsByTweakId;
 
-
+- (instancetype)initWithDeviceProperties:(id<RolloutDeviceProperties>)deviceProperties rolloutErrors:(id<RolloutErrors>)rolloutErrors;
 @end
 

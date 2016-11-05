@@ -19,22 +19,23 @@ class SkywardViewController: UIViewController {
         super.viewDidLoad()
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let url = NSURL(string: "https://skyward.waterloo.k12.wi.us/scripts/cgiip.exe/WService=wsEAplus/mobilelogin.w")
-        let request = NSURLRequest(URL: url!)
+        let url = URL(string: "https://skyward.waterloo.k12.wi.us/scripts/cgiip.exe/WService=wsEAplus/mobilelogin.w")
+        let request = URLRequest(url: url!)
         
         webview3.loadRequest(request)
         
+        let userAgent = UIWebView().stringByEvaluatingJavaScript(from: "navigator.userAgent")! + " Custom-Agent"
+        UserDefaults.standard.register(defaults: ["UserAgent" : userAgent])
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

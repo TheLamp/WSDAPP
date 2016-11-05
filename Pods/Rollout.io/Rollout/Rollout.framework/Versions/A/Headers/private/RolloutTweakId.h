@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class RolloutMethodId;
+@protocol RolloutMethodId;
 
 typedef enum {
     RolloutTweakId_swizzlingType_replaceImplementation,
@@ -13,15 +13,20 @@ typedef enum {
     RolloutTweakId_swizzlingTypesCount
 } RolloutTweakId_swizzlingType;
 
-
+typedef enum {
+    RolloutTweakId_closureType_objC,
+    RolloutTweakId_closureType_swift,
+    RolloutTweakId_closureTypesCount
+} RolloutTweakId_closureType;
 
 @interface RolloutTweakId : NSObject <NSCopying>
 
-@property (readonly) RolloutMethodId *methodId;
+@property (readonly) id<RolloutMethodId> methodId;
 @property (readonly) RolloutTweakId_swizzlingType swizzlingType;
+@property (readonly) RolloutTweakId_closureType closureType;
 
+- (instancetype)initWithMethodId:(id <RolloutMethodId>)methodId swizzlingType:(RolloutTweakId_swizzlingType)swizzlingType closureType:(RolloutTweakId_closureType)closureType;
 
-- (instancetype)initWithMethodId:(RolloutMethodId *)methodId swizzlingType:(RolloutTweakId_swizzlingType)swizzlingType;
-- (instancetype)initFromJsonConfiguration:(NSDictionary*)configuration;
+- (instancetype)initFromJsonConfiguration:(NSDictionary *)configuration;
 
 @end
