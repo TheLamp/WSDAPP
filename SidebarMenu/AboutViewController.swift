@@ -8,9 +8,8 @@
 
 import UIKit
 import Foundation
-import Firebase
 
-class AboutViewController: UIViewController {
+class AboutViewController: UITableViewController {
     
     @IBOutlet weak var drawer: UIBarButtonItem!
     

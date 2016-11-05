@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "WSDAPP.xcodeproj.rollouttemp" */;
+			buildConfigurationList = F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "WSDAPP" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -727,7 +727,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "WSDAPP.xcodeproj.rollouttemp" */ = {
+		F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "WSDAPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4702A0D1A7F27DC00E30A3C /* Debug */,
