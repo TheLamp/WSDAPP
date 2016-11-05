@@ -10,17 +10,14 @@ import UIKit
 
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate {
     
-    
     // outlet - table view
     @IBOutlet weak var myTableView: UITableView!
-    
     
     
     // outlet - barbutton
     @IBOutlet weak var menuButton: UIBarButtonItem!
 
     // slide to refresh
-    
     let refreshControl: UIRefreshControl = UIRefreshControl()
     
     // xml parser

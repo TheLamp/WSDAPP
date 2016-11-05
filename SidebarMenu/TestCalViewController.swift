@@ -21,7 +21,8 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     // outlet - barbutton
     @IBOutlet weak var menuButton: UIBarButtonItem!
 
-    
+    // slide to refresh
+    let refreshControl: UIRefreshControl = UIRefreshControl()
     
     // xml parser
     var myParser: XMLParser = XMLParser()
@@ -45,9 +46,35 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
+        
+        // pull to refresh
+        refreshControl.addTarget(self, action: #selector(ListViewController.uiRefreshControlAction), for: UIControlEvents.valueChanged)
+        self.newtable.addSubview(refreshControl);
+        
         // set tableview delegate
         self.newtable.dataSource = self
         self.newtable.delegate = self
+    }
+    
+    func uiRefreshControlAction() {
+        self.refreshControl.beginRefreshing()
+        rssRecordList.removeAll()
+        if let rssURL = URL(string: RSS_FEED_URL) {
+            
+            // fetch rss content from url
+            self.myParser = XMLParser(contentsOf: rssURL)!
+            
+            // set parser delegate
+            self.myParser.delegate = self
+            self.myParser.shouldResolveExternalEntities = false
+            
+            // start parsing
+            self.myParser.parse()
+        }
+        
+        self.refreshControl.endRefreshing()
+        self.newtable.reloadData()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
