@@ -25,7 +25,7 @@ class FlexiSCHEDViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let url = URL(string: "https://flexi4.flexisched.net/waterloo")
+        let url = URL(string: "https://waterloo.flexisched.net/")
         let request = URLRequest(url: url!)
         
         webview8.loadRequest(request)

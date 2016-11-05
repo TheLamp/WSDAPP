@@ -10,4 +10,4 @@ import Foundation
 
 
 // RSS Feed URL
-let RSS_FEED_URL2 = "http://thelampservices.com/wsd/events/feed/"
+let RSS_FEED_URL2 = "https://www.lampserv.net/wsd/events/feed/"
