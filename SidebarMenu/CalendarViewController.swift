@@ -24,8 +24,8 @@ class CalendarViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let url = NSURL(string: "https://www.thelampservices.com/schoolcalendar.pdf")
-        let request = NSURLRequest(URL: url!)
+        let url = URL(string: "https://www.thelampservices.com/schoolcalendar.pdf")
+        let request = URLRequest(url: url!)
         
         webview4.loadRequest(request)
         

@@ -19,7 +19,7 @@ class TestCalDetailsViewController: UIViewController, UIWebViewDelegate {
     
     
     // refresh button
-    @IBAction func refreshButtonClicked(sender: UIBarButtonItem) {
+    @IBAction func refreshButtonClicked(_ sender: UIBarButtonItem) {
         self.refreshWebView()
     }
     
@@ -43,8 +43,8 @@ class TestCalDetailsViewController: UIViewController, UIWebViewDelegate {
         self.spinner2.startAnimating()
         
         // load url in webview
-        if let fetchURL = NSURL(string: self.link! ) {
-            let urlRequest = NSURLRequest(URL: fetchURL)
+        if let fetchURL = URL(string: self.link! ) {
+            let urlRequest = URLRequest(url: fetchURL)
             self.mywebView2.loadRequest(urlRequest)
         }
         
@@ -60,19 +60,19 @@ class TestCalDetailsViewController: UIViewController, UIWebViewDelegate {
     
     // MARK: - Webview delegate
     
-    func webViewDidFinishLoad(webView: UIWebView) {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
         
         // stop spinner
         self.spinner2.stopAnimating()
     }
     
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         
         // stop spinner
         self.spinner2.stopAnimating()
         
         // show error message
-        self.showAlertMessage(alertTitle: "Error", alertMessage: "Error while loading url.")
+        self.showAlertMessage(alertTitle: "Error", alertMessage: "Error loading events. Contact District for more info.")
     }
     
     
@@ -92,13 +92,13 @@ class TestCalDetailsViewController: UIViewController, UIWebViewDelegate {
     }
     
     // show alert with ok button
-    private func showAlertMessage(alertTitle alertTitle: String, alertMessage: String ) -> Void {
+    fileprivate func showAlertMessage(alertTitle: String, alertMessage: String ) -> Void {
         
         // create alert controller
-        let alertCtrl = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.Alert) as UIAlertController
+        let alertCtrl = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.alert) as UIAlertController
         
         // create action
-        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler:
             { (action: UIAlertAction) -> Void in
                 // you can add code here if needed
         })
@@ -107,7 +107,7 @@ class TestCalDetailsViewController: UIViewController, UIWebViewDelegate {
         alertCtrl.addAction(okAction)
         
         // present alert
-        self.presentViewController(alertCtrl, animated: true, completion: { (void) -> Void in
+        self.present(alertCtrl, animated: true, completion: { (void) -> Void in
             // you can add code here if needed
         })
     }

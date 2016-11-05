@@ -23,8 +23,8 @@ class LunchViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let url = NSURL(string: "https://thelampservices.com/lunch.pdf")
-        let request = NSURLRequest(URL: url!)
+        let url = URL(string: "https://thelampservices.com/lunch.pdf")
+        let request = URLRequest(url: url!)
         
         webview2.loadRequest(request)
         

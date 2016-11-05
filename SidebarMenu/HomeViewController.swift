@@ -23,8 +23,8 @@ class HomeViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let url = NSURL(string: "https://sites.google.com/site/wsdtest123")
-        let request = NSURLRequest(URL: url!)
+        let url = URL(string: "https://sites.google.com/site/wsdtest123")
+        let request = URLRequest(url: url!)
         
         webview1.loadRequest(request)
         

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A25BC02590A307BDAED4CB4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF84C7FE28D4DD8F2AE1C607 /* Pods.framework */; };
+		3FD131505F870892CA616E65 /* Pods_WSDAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA09DE620C68995D6DECFC2 /* Pods_WSDAPP.framework */; };
 		92194AB91C7EC6B70003DB42 /* RssRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92194AB81C7EC6B70003DB42 /* RssRecord.swift */; };
 		92194ABB1C7EC6C40003DB42 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92194ABA1C7EC6C40003DB42 /* Common.swift */; };
 		92194ABE1C7EC6E80003DB42 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92194ABC1C7EC6E80003DB42 /* DetailsViewController.swift */; };
@@ -27,7 +27,10 @@
 		92D1EB541C7840F400C39B1D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D1EB531C7840F400C39B1D /* WebKit.framework */; };
 		92D1EB561C7840FE00C39B1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D1EB551C7840FE00C39B1D /* UIKit.framework */; };
 		92D1EB581C79391900C39B1D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D1EB571C79391900C39B1D /* AboutViewController.swift */; };
+		A0D8138A6CCEA404B73FBA34 /* RolloutSwiftInjectionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C387E8CA29E7483EBB0D49 /* RolloutSwiftInjectionBridge.swift */; };
+		A5380971B060FC208A8F6A09 /* Pods_WSDAPPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250ED645CF6607A964E3E672 /* Pods_WSDAPPTests.framework */; };
 		AF6A5B6220AB4B69917CB07F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99C06679C9A49CF84FA3D96 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BF2FC57DB701CB4908DECBEF /* RolloutGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BAD4A53DFFEFFFD9F3252D /* RolloutGenerated.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
 		F4702A001A7F27DC00E30A3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */; };
@@ -47,7 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7AED8E5431C65EEF605F63B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		250ED645CF6607A964E3E672 /* Pods_WSDAPPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSDAPPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36BAD4A53DFFEFFFD9F3252D /* RolloutGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolloutGenerated.swift; path = Pods/Rollout.io/RolloutSwift/RolloutGenerated.swift; sourceTree = "<group>"; };
+		84A1C42A1457D6515540FD35 /* Pods-WSDAPPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSDAPPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSDAPPTests/Pods-WSDAPPTests.release.xcconfig"; sourceTree = "<group>"; };
 		92194AB81C7EC6B70003DB42 /* RssRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssRecord.swift; sourceTree = "<group>"; };
 		92194ABA1C7EC6C40003DB42 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		92194ABC1C7EC6E80003DB42 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +76,11 @@
 		92D1EB551C7840FE00C39B1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		92D1EB571C79391900C39B1D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		AF84C7FE28D4DD8F2AE1C607 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C387E8CA29E7483EBB0D49 /* RolloutSwiftInjectionBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolloutSwiftInjectionBridge.swift; path = Pods/Rollout.io/RolloutSwift/RolloutSwiftInjectionBridge.swift; sourceTree = "<group>"; };
+		BCA09DE620C68995D6DECFC2 /* Pods_WSDAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSDAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B5CC1CEB72FEA3A13F93C2 /* Pods-WSDAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSDAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSDAPP/Pods-WSDAPP.release.xcconfig"; sourceTree = "<group>"; };
+		D19404E3342501598E85298D /* Pods-WSDAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSDAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSDAPP/Pods-WSDAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		DC3AE5C83D66AEE9E6D53E94 /* Pods-WSDAPPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSDAPPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSDAPPTests/Pods-WSDAPPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* WSDAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSDAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +91,6 @@
 		F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMenuTests.swift; sourceTree = "<group>"; };
 		F4702A151A7F342F00E30A3C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F4702A171A7F351C00E30A3C /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
-		F6D1F7D42142063429B51370 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F99C06679C9A49CF84FA3D96 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -94,7 +103,7 @@
 				92D1EB541C7840F400C39B1D /* WebKit.framework in Frameworks */,
 				F4702A161A7F342F00E30A3C /* MapKit.framework in Frameworks */,
 				AF6A5B6220AB4B69917CB07F /* JavaScriptCore.framework in Frameworks */,
-				7A25BC02590A307BDAED4CB4 /* Pods.framework in Frameworks */,
+				3FD131505F870892CA616E65 /* Pods_WSDAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,17 +111,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5380971B060FC208A8F6A09 /* Pods_WSDAPPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		70D7500CF890F03B4A261E29 /* Pods */ = {
+		6097002AE22B38DBD45CB976 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7AED8E5431C65EEF605F63B2 /* Pods.debug.xcconfig */,
-				F6D1F7D42142063429B51370 /* Pods.release.xcconfig */,
+				D19404E3342501598E85298D /* Pods-WSDAPP.debug.xcconfig */,
+				C2B5CC1CEB72FEA3A13F93C2 /* Pods-WSDAPP.release.xcconfig */,
+				DC3AE5C83D66AEE9E6D53E94 /* Pods-WSDAPPTests.debug.xcconfig */,
+				84A1C42A1457D6515540FD35 /* Pods-WSDAPPTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -123,8 +135,19 @@
 				921EDC471C7ECD090052FED1 /* Rollout.framework */,
 				F99C06679C9A49CF84FA3D96 /* JavaScriptCore.framework */,
 				AF84C7FE28D4DD8F2AE1C607 /* Pods.framework */,
+				BCA09DE620C68995D6DECFC2 /* Pods_WSDAPP.framework */,
+				250ED645CF6607A964E3E672 /* Pods_WSDAPPTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9F5BCD2E4354006CD5B4E5F /* Rollout */ = {
+			isa = PBXGroup;
+			children = (
+				36BAD4A53DFFEFFFD9F3252D /* RolloutGenerated.swift */,
+				B6C387E8CA29E7483EBB0D49 /* RolloutSwiftInjectionBridge.swift */,
+			);
+			name = Rollout;
 			sourceTree = "<group>";
 		};
 		F47029E71A7F27DB00E30A3C = {
@@ -137,7 +160,8 @@
 				F4702A081A7F27DC00E30A3C /* SidebarMenuTests */,
 				F47029F11A7F27DB00E30A3C /* Products */,
 				7FAB006D52D04539974694A3 /* Frameworks */,
-				70D7500CF890F03B4A261E29 /* Pods */,
+				6097002AE22B38DBD45CB976 /* Pods */,
+				E9F5BCD2E4354006CD5B4E5F /* Rollout */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,13 +238,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4702A0F1A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "WSDAPP" */;
 			buildPhases = (
-				03582D28DE3CDE90C4E27F21 /* Check Pods Manifest.lock */,
+				E7D10A9F951A1FA88582DCDF /* Rollout.io pre-build */,
+				10400A6DB0F5BF3831F3A2B2 /* [CP] Check Pods Manifest.lock */,
 				F47029EC1A7F27DB00E30A3C /* Sources */,
 				F47029ED1A7F27DB00E30A3C /* Frameworks */,
 				F47029EE1A7F27DB00E30A3C /* Resources */,
-				76CA91D20C60C58B4A30C174 /* Embed Pods Frameworks */,
-				01416EAFEF594ACC9D3A60B7 /* Copy Pods Resources */,
 				92194AC01C7EC85B0003DB42 /* ShellScript */,
+				2B13C68F59CBED8618EC8A9C /* [CP] Embed Pods Frameworks */,
+				DFD30E5C2CBC855AF449D104 /* [CP] Copy Pods Resources */,
+				8C6097A90DD00FEC770E5EC1 /* Rollout.io post-build */,
 			);
 			buildRules = (
 			);
@@ -235,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4702A121A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "WSDAPPTests" */;
 			buildPhases = (
+				856E78A08C92DFFE4AA10919 /* [CP] Check Pods Manifest.lock */,
 				F4702A011A7F27DC00E30A3C /* Sources */,
 				F4702A021A7F27DC00E30A3C /* Frameworks */,
 				F4702A031A7F27DC00E30A3C /* Resources */,
+				51CF49813F6BE8B826452910 /* [CP] Embed Pods Frameworks */,
+				6B91365FE207355CC980C4E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,12 +285,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = AppCoda;
 				TargetAttributes = {
 					F47029EF1A7F27DB00E30A3C = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = H65Y924PHT;
+						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -270,11 +300,12 @@
 					};
 					F4702A041A7F27DC00E30A3C = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = F47029EF1A7F27DB00E30A3C;
 					};
 				};
 			};
-			buildConfigurationList = F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "WSDAPP" */;
+			buildConfigurationList = F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "WSDAPP.xcodeproj.rollouttemp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -315,50 +346,94 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01416EAFEF594ACC9D3A60B7 /* Copy Pods Resources */ = {
+		10400A6DB0F5BF3831F3A2B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		03582D28DE3CDE90C4E27F21 /* Check Pods Manifest.lock */ = {
+		2B13C68F59CBED8618EC8A9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WSDAPP/Pods-WSDAPP-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		76CA91D20C60C58B4A30C174 /* Embed Pods Frameworks */ = {
+		51CF49813F6BE8B826452910 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WSDAPPTests/Pods-WSDAPPTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6B91365FE207355CC980C4E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WSDAPPTests/Pods-WSDAPPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856E78A08C92DFFE4AA10919 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6097A90DD00FEC770E5EC1 /* Rollout.io post-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Rollout.io post-build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ROLLOUT_lastXcodeprojConfiguration=8 \"${SRCROOT}/Pods/Rollout.io/lib/post-build_xcode_phase\" -k 56c8f44ed3b53d1615a3fadb";
 		};
 		92194AC01C7EC85B0003DB42 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -372,6 +447,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" cfd44ffd2bff9f2111db37e09cf037efe76f8fe0 1831c58c112530c1f3f9f85ea8cb1606fd6cbcbaeb8200304dbd8332d37ea9a1";
+		};
+		DFD30E5C2CBC855AF449D104 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WSDAPP/Pods-WSDAPP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D10A9F951A1FA88582DCDF /* Rollout.io pre-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Rollout.io pre-build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ROLLOUT_lastXcodeprojConfiguration=8 \"${SRCROOT}/Pods/Rollout.io/lib/pre-build_xcode_phase\" -k 56c8f44ed3b53d1615a3fadb";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -397,6 +501,8 @@
 				92194ABB1C7EC6C40003DB42 /* Common.swift in Sources */,
 				926DD3D71C81518F005A4FEB /* TestCalViewController.swift in Sources */,
 				92D055CE1C78218A00CBEEC0 /* AlertViewController.swift in Sources */,
+				BF2FC57DB701CB4908DECBEF /* RolloutGenerated.swift in Sources */,
+				A0D8138A6CCEA404B73FBA34 /* RolloutSwiftInjectionBridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +549,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -453,6 +561,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -486,8 +595,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -495,6 +606,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -504,13 +616,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F4702A101A7F27DC00E30A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AED8E5431C65EEF605F63B2 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D19404E3342501598E85298D /* Pods-WSDAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -530,15 +643,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lampserv.wsd;
 				PRODUCT_NAME = WSDAPP;
 				PROVISIONING_PROFILE = "";
+				SWIFT_EXEC = "$(SRCROOT)/Pods/Rollout.io/lib/swift_wrapper/swiftc";
 				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenu/SidebarMenu-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F4702A111A7F27DC00E30A3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6D1F7D42142063429B51370 /* Pods.release.xcconfig */;
+			baseConfigurationReference = C2B5CC1CEB72FEA3A13F93C2 /* Pods-WSDAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -558,13 +673,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lampserv.wsd;
 				PRODUCT_NAME = WSDAPP;
 				PROVISIONING_PROFILE = "";
+				SWIFT_EXEC = "$(SRCROOT)/Pods/Rollout.io/lib/swift_wrapper/swiftc";
 				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenu/SidebarMenu-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		F4702A131A7F27DC00E30A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3AE5C83D66AEE9E6D53E94 /* Pods-WSDAPPTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -581,12 +699,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = WSDAPP;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSDAPP.app/WSDAPP";
 			};
 			name = Debug;
 		};
 		F4702A141A7F27DC00E30A3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A1C42A1457D6515540FD35 /* Pods-WSDAPPTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -599,6 +719,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = WSDAPP;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSDAPP.app/WSDAPP";
 			};
 			name = Release;
@@ -606,7 +727,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "WSDAPP" */ = {
+		F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "WSDAPP.xcodeproj.rollouttemp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4702A0D1A7F27DC00E30A3C /* Debug */,

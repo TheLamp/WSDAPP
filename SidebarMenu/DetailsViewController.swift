@@ -20,7 +20,7 @@ class DetailsViewController: UIViewController, UIWebViewDelegate {
     
     
     // refresh button
-    @IBAction func refreshButtonClicked(sender: UIBarButtonItem) {
+    @IBAction func refreshButtonClicked(_ sender: UIBarButtonItem) {
         self.refreshWebView()
     }
     
@@ -44,8 +44,8 @@ class DetailsViewController: UIViewController, UIWebViewDelegate {
         self.spinner.startAnimating()
         
         // load url in webview
-        if let fetchURL = NSURL(string: self.link! ) {
-            let urlRequest = NSURLRequest(URL: fetchURL)
+        if let fetchURL = URL(string: self.link! ) {
+            let urlRequest = URLRequest(url: fetchURL)
             self.myWebView.loadRequest(urlRequest)
         }
         
@@ -61,13 +61,13 @@ class DetailsViewController: UIViewController, UIWebViewDelegate {
     
     // MARK: - Webview delegate
     
-    func webViewDidFinishLoad(webView: UIWebView) {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
         
         // stop spinner
         self.spinner.stopAnimating()
     }
     
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         
         // stop spinner
         self.spinner.stopAnimating()
@@ -93,13 +93,13 @@ class DetailsViewController: UIViewController, UIWebViewDelegate {
     }
     
     // show alert with ok button
-    private func showAlertMessage(alertTitle alertTitle: String, alertMessage: String ) -> Void {
+    fileprivate func showAlertMessage(alertTitle: String, alertMessage: String ) -> Void {
         
         // create alert controller
-        let alertCtrl = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.Alert) as UIAlertController
+        let alertCtrl = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.alert) as UIAlertController
         
         // create action
-        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler:
             { (action: UIAlertAction) -> Void in
                 // you can add code here if needed
         })
@@ -108,7 +108,7 @@ class DetailsViewController: UIViewController, UIWebViewDelegate {
         alertCtrl.addAction(okAction)
         
         // present alert
-        self.presentViewController(alertCtrl, animated: true, completion: { (void) -> Void in
+        self.present(alertCtrl, animated: true, completion: { (void) -> Void in
             // you can add code here if needed
         })
     }

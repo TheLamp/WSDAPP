@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestCalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate {
+class TestCalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate {
     
     // outlet - table view
     @IBOutlet weak var newtable: UITableView!
@@ -24,7 +24,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     // xml parser
-    var myParser: NSXMLParser = NSXMLParser()
+    var myParser: XMLParser = XMLParser()
     
     // rss records
     var rssRecordList : [RssRecord2] = [RssRecord2]()
@@ -50,7 +50,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         self.newtable.delegate = self
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         // load Rss data and parse
         if self.rssRecordList.isEmpty {
@@ -69,28 +69,28 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     // MARK: - Table view dataSource and Delegate
     
     // return number of section within a table
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     // return row height
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
     
     // return how may records in a table
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.rssRecordList.count
     }
     
     // return cell
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // collect reusable cell
-        let cell = tableView.dequeueReusableCellWithIdentifier("rssCell2", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "rssCell2", for: indexPath)
         
         // find record for current cell
-        let thisRecord : RssRecord2  = self.rssRecordList[indexPath.row]
+        let thisRecord : RssRecord2  = self.rssRecordList[(indexPath as NSIndexPath).row]
         
         // set value for main title and detail tect
         cell.textLabel?.text = thisRecord.title
@@ -100,8 +100,8 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     
-    func mytableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("segueShowDetails2", sender: self)
+    func mytableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "segueShowDetails2", sender: self)
     }
     
     
@@ -110,12 +110,12 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     // MARK: - NSXML Parse delegate function
     
     // start parsing document
-    func parserDidStartDocument(parser: NSXMLParser) {
+    func parserDidStartDocument(_ parser: XMLParser) {
         // start parsing
     }
     
     // element start detected
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         
         if elementName == "item" {
             self.isTagFound["item"] = true
@@ -135,7 +135,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     
     // characters received for some element
     
-    func parser(parser: NSXMLParser, foundCharacters string: String) {
+    func parser(_ parser: XMLParser, foundCharacters string: String) {
         
         if isTagFound["title"] == true {
             self.rssRecord?.title += string
@@ -150,7 +150,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     // element end detected
-    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
         if elementName == "item" {
             self.isTagFound["item"] = false
@@ -168,7 +168,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     // end parsing document
-    func parserDidEndDocument(parser: NSXMLParser) {
+    func parserDidEndDocument(_ parser: XMLParser) {
         
         //reload table view
         self.newtable.reloadData()
@@ -176,13 +176,11 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     // if any error detected while parsing.
-    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
+    func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
         
-        //  stop animation
-        self.spinner.stopAnimating()
         
         // show error message
-        self.showAlertMessage(alertTitle: "Error", alertMessage: "Error while parsing xml.")
+        self.showAlertMessage(alertTitle: "Error", alertMessage: "Error loading events. Contact District for more info.")
     }
     
     
@@ -191,13 +189,13 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     // MARK: - Utility functions
     
     // load rss and parse it
-    private func loadRSSData(){
+    fileprivate func loadRSSData(){
         
-        if let rssURL = NSURL(string: RSS_FEED_URL2) {
+        if let rssURL = URL(string: RSS_FEED_URL2) {
             
             
             // fetch rss content from url
-            self.myParser = NSXMLParser(contentsOfURL: rssURL)!
+            self.myParser = XMLParser(contentsOf: rssURL)!
             
             // set parser delegate
             self.myParser.delegate = self
@@ -210,13 +208,13 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     // show alert with ok button
-    private func showAlertMessage(alertTitle alertTitle: String, alertMessage: String ) -> Void {
+    fileprivate func showAlertMessage(alertTitle: String, alertMessage: String ) -> Void {
         
         // create alert controller
-        let alertCtrl = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.Alert) as UIAlertController
+        let alertCtrl = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.alert) as UIAlertController
         
         // create action
-        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler:
             { (action: UIAlertAction) -> Void in
                 // you can add code here if needed
         })
@@ -225,7 +223,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         alertCtrl.addAction(okAction)
         
         // present alert
-        self.presentViewController(alertCtrl, animated: true, completion: { (void) -> Void in
+        self.present(alertCtrl, animated: true, completion: { (void) -> Void in
             // you can add code here if needed
         })
     }
@@ -236,26 +234,26 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "segueShowDetails2" {
             
             // find index path for selected row
-            let selectedIndexPath : [NSIndexPath] = self.newtable.indexPathsForSelectedRows!
+            let selectedIndexPath : [IndexPath] = self.newtable.indexPathsForSelectedRows!
             
             // deselect the selected row
-            self.newtable.deselectRowAtIndexPath(selectedIndexPath[0], animated: true)
+            self.newtable.deselectRow(at: selectedIndexPath[0], animated: true)
             
             // create destination view controller
-            let destVc = segue.destinationViewController as! TestCalDetailsViewController
+            let destVc = segue.destination as! TestCalDetailsViewController
             
             // set title for next screen
-            destVc.navigationItem.title = self.rssRecordList[selectedIndexPath[0].row].title
+            destVc.navigationItem.title = self.rssRecordList[(selectedIndexPath[0] as NSIndexPath).row].title
             
             // set link value for destination view controller
-            destVc.link = self.rssRecordList[selectedIndexPath[0].row].link
+            destVc.link = self.rssRecordList[(selectedIndexPath[0] as NSIndexPath).row].link
             
         }
         
