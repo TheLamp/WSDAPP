@@ -127,7 +127,7 @@ class TestCalViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     
-    func mytableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    @objc(tableView:didSelectRowAtIndexPath:) func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "segueShowDetails2", sender: self)
     }
     

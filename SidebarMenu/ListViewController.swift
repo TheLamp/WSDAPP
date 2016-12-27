@@ -68,8 +68,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.myParser.parse()
         }
         
-        self.refreshControl.endRefreshing()
         self.myTableView.reloadData()
+        self.refreshControl.endRefreshing()
 
     }
     
