@@ -10,7 +10,7 @@ App made for Waterloo School District - Waterloo WI
   - Night Mode (Coming Soon)
   - Pull to refresh
 
-WSDAPP used the coding language Swift for it's core and also uses Objective-C for additional parts inlcuding SWRevealViewController (Slide-Out Menu) and Firebase (Backend). WSDAPP was almost enitrly built off of guides found around the web.
+WSDAPP used the coding language Swift for it's core and also uses Objective-C for additional parts inlcuding SWRevealViewController (Slide-Out Menu) and Firebase (Backend).
 
 ### Version
 3.2 BETA
