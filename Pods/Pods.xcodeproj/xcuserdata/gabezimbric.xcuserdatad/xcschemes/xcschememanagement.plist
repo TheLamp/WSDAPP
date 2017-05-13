@@ -4,17 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Firebase.xcscheme</key>
+		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-WSDAPP.xcscheme</key>
+		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-WSDAPPTests.xcscheme</key>
+		<key>Pods-WSD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WSDTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WSDUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4982F3084B981C1E6DCF8B3A064BA2DB</key>
+		<key>103922FFC583397A15E4B9E813F27F6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FD0771EDDBDE7B9546A7B7A0EC19CA35</key>
+		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF488C901EB5AD9E14F57AC169C89377</key>
+		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F24FDD560AB1563180402BEDC2CF9296</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F87594C8D643C68D49C36CD49F37D020</key>
 		<dict>
 			<key>primary</key>
 			<true/>

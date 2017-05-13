@@ -263,7 +263,7 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
     if ( !isInside && _c.extendsPointInsideHit )
     {
         UIView *testViews[] = { _rearView, _frontView, _rightView };
-        UIViewController *testControllers[] = { _c.rearViewController, _c.frontViewController};
+        UIViewController *testControllers[] = { _c.rearViewController, _c.frontViewController, _c.rightViewController };
         
         for ( NSInteger i=0 ; i<3 && !isInside ; i++ )
         {

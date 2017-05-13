@@ -1,0 +1,6 @@
+framework module Pods_WSDUITests {
+  umbrella header "Pods-WSDUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
